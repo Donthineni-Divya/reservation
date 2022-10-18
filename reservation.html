@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reservation details</title>
+	<link rel="stylesheet" type="text/css" href="reservation.css">
+</head>
+<body>
+	<h1>Reservation</h1>
+	<div class="container">
+		<form method="POST" action="booking.php" name="form" onsubmit="return validateForm()">
+			<label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+      <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+      <label for="email">Email:</label><br>
+        <input type="text" id="femail" name="femail" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email"><br><br>
+      <label for="city">City:</label><br>
+        <input type="text"  id="fcity" name="fcity" required><br><br>
+      <label for="phoneno">PhoneNo:</label><br>
+        <input type="phoneno" id="fphoneno" name="fphoneno" required><br><br>
+      <label for="destination">Destination:</label><br>
+        <select>
+           <option value = "Goa"> Goa </option>
+           <option value = "Kerela"> Kerela </option>
+           <option value = "Rajasthan"> Rajasthan </option>
+           <option value = "Jammu And Kashmir"> Jammu And Kashmir </option>
+           <option value = "Andaman And Nicobar"> Andaman And Nicobar </option>
+          </select>
+					<input type="text" id="fdestination" name="fdestination" required><br><br>
+      <label for="traveldate">Travel Date:</label><br>
+        <input type="date" id="ftraveldate"name="ftraveldate" required><br><br>
+      <label for="noofpeople">No Of People:</label><br>
+        <input type="text" id="fnoofpeople" name="fnoofpeople" required><br><br>
+      
+          </select>
+					
+      <div class="btn">
+				<input name="submit" value="Submit" type="submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
